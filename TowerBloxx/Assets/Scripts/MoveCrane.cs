@@ -1,5 +1,3 @@
-
-using System;
 using UnityEngine;
 
 public class MoveCrane : MonoBehaviour
@@ -21,6 +19,5 @@ public class MoveCrane : MonoBehaviour
     private void Move()
     {
         rb.AddForce(Vector3.forward*speed,ForceMode.Impulse);
-        Debug.Log("entro");
     }
 }
