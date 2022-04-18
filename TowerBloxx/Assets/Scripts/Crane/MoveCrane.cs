@@ -10,14 +10,14 @@ public class MoveCrane : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
     private void Start()
     {
-        InvokeRepeating("Move",initTime,time);
+        InvokeRepeating("Impulse",initTime,time);
     }
 
-    private void Move()
+    private void Impulse()
     {
         rb.AddForce(Vector3.forward*speed,ForceMode.Impulse);
     }
+
 }

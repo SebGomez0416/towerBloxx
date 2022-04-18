@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 4571616485847672962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5.65, z: 0}
-  m_LocalScale: {x: 0.1, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.1, y: 1.5, z: 0.1}
   m_Children:
   - {fileID: 7159581768842827897}
   m_Father: {fileID: 0}
@@ -159,7 +159,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 6.65, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 7.15, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -197,6 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7159581768842827897}
   prefabBlock: {fileID: 4525520012971647595, guid: 55ff938aeaf945841ad2525d3411ebdf, type: 3}
+  timeToSpawn: 2
+  timeToStopBlock: 3
 --- !u!114 &2016180258532420512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,3 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdba77fc306139040bdee019adb6522a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
+  initTime: 0
+  time: 10
