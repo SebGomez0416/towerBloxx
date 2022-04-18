@@ -15,6 +15,7 @@ public class MoveAnchor : MonoBehaviour
 
     void Move()
     {
-        transform.position+= Vector3.up*distance;
+        transform.position += Vector3.Lerp(transform.position, Vector3.up * distance, 4);
+
     }
 }
