@@ -17,6 +17,6 @@ public class StopBlock : MonoBehaviour
     }
     private void Stop()
     {
-        GetComponent<Rigidbody>().isKinematic = true;
+       Destroy(GetComponent<Rigidbody>());        
     }
 }
