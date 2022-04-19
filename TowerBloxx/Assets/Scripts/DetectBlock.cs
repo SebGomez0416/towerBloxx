@@ -14,7 +14,7 @@ public class DetectBlock : MonoBehaviour
 
         hits = Physics.RaycastAll(transform.position, Vector3.up, distanceRay);  
 
-        if (hits.Length <= 1) return;
+        if (hits.Length <= 3) return;
         OnDetectBlock?.Invoke();      
        
     }   

@@ -46,6 +46,8 @@ public class MoveAnchor : MonoBehaviour
         }
         else
         {
+            initPos=transform.position;
+            offSet.position+=new Vector3(0,3,0);
             isMove=false;
             lerpValue=0;
         }        
