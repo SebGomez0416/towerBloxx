@@ -21,7 +21,8 @@ public class SpawnBlock : MonoBehaviour
    void Spawn()
    {
        isFalling = false;
-       block =Instantiate(prefabBlock,spawnPoint.position,spawnPoint.rotation , spawnPoint);
+       block =Instantiate(prefabBlock,spawnPoint.position,spawnPoint.rotation);
+       block.transform.SetParent(transform);
    }
    void Disengage()
    {

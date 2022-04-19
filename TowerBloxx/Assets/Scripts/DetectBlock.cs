@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DetectBlock : MonoBehaviour
 {
-    [SerializeField] private float distanceRay;
+    [SerializeField] private float distanceRay;   
     public delegate void detectBlock();
     public static detectBlock OnDetectBlock;
     
@@ -12,11 +12,12 @@ public class DetectBlock : MonoBehaviour
         
         RaycastHit[] hits;
 
-        hits = Physics.RaycastAll(transform.position, Vector3.up, distanceRay);
+        hits = Physics.RaycastAll(transform.position, Vector3.up, distanceRay);  
 
-        if (hits.Length <= 3) return;
-        OnDetectBlock?.Invoke();
+        if (hits.Length <= 1) return;
+        OnDetectBlock?.Invoke();      
        
-    }
+    }   
+   
     
 }
